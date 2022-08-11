@@ -1,2 +1,2 @@
 # lawyer-date-calculator
-Simple Date Calculator Usefull to Lawyers
+Simple date calculator for lawyers with gui using simplypygui.
