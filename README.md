@@ -1,8 +1,6 @@
 # lawyer-date-calculator
-Simple date calculator that may be useful to lawyers who need to meet court deadlines. This is a python script that uses [PySimplyGUI](https://github.com/PySimpleGUI) to create a graphical user interface. You can just run the script (date_gui.py) while using PySimpleGUI as a dependency, or use one of the executable files (made with [pyinstaller](https://github.com/pyinstaller/pyinstaller)) which already have all dependencies (including python).
+Simple date calculator that may be useful to lawyers who need to meet court deadlines. This is a python script that uses [PySimplyGUI](https://github.com/PySimpleGUI) to create a graphical user interface. You can run the script (date_gui.py) while using PySimpleGUI as a dependency, or use one of the executable files (made with [pyinstaller](https://github.com/pyinstaller/pyinstaller)) which already have all dependencies (including python):
 
-## Run the Script
+* [Linux Executable](https://github.com/jessemcg/lawyer-date-calculator/blob/main/date_gui_linux). Make sure the file is executable (with gnome, right click, go to properties, go to permissions, and check the execute box). Optional: Use an app like [Pin It](https://flathub.org/apps/details/com.github.ryonakano.pinit) to create a .desktop file and incorporate it into your system.
 
-## Linux Executable
-
-## Windows Executable  
+* [Windows Executable](https://github.com/jessemcg/lawyer-date-calculator/blob/main/date_gui_windows.exe). Optional: pin to taskbar by dragging file to taskbar.
