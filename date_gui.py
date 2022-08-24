@@ -6,8 +6,8 @@ from datetime import timedelta
 from datetime import date
 from dateutil import relativedelta
 
-# PysimpleGUI Layhout
-# Simple message at the tope
+# PysimpleGUI Layout
+# Simple message at the top
 layout = [  [sg.Text("date format = mm/dd/yyyy")], 
 # Buttons and input boxes
             [sg.Button('Due Date from Today', size=(30,1)), sg.Text("adding"), sg.Input(size=(3,1), key='-duefromtoday_input-'), sg.Text("days")],
@@ -20,7 +20,7 @@ layout = [  [sg.Text("date format = mm/dd/yyyy")],
 # Create the main window
 window = sg.Window('Calculate Dates', layout, font="_")
 
-# Functions that do the calculations
+# Functions to do the calculations
 
 # Calculates due date from today
 def duefromtoday():
@@ -86,4 +86,4 @@ while True:
     if event == sg.WINDOW_CLOSED or event == 'Close':
         break
     # Output the answer in large yellow font
-    window['-OUTPUT-'].update(values['-duedate-'], text_color='yellow', font='Courier 20')
+    window['-OUTPUT-'].update(values['-duedate-'], text_color='yellow', font='Helvetica 16')
