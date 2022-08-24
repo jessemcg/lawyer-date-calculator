@@ -1,7 +1,7 @@
 # lawyer-date-calculator
 Simple date calculator that may be useful to lawyers who need to meet court deadlines. This is a python script that uses [PySimplyGUI](https://github.com/PySimpleGUI) to create a graphical user interface.
 
-![](/repository/lawyer-date-calculator/blob/main/photos/date_gui.png")
+![](screenshot.png)
 
 ## Installing
 
