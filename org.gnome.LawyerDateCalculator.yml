@@ -1,0 +1,45 @@
+app-id: org.gnome.LawyerDateCalculator
+runtime: org.gnome.Platform
+runtime-version: '3.38'
+sdk: org.gnome.Sdk
+command: runner.sh
+
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+
+modules:
+    # Python Dateutil Dependency
+  - name: python3-python-dateutil
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "python-dateutil" --no-build-isolation
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl
+        sha256: 961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9 
+    # The App Itself
+  - name: runner
+    buildsystem: simple
+    build-commands:
+      - install -D runner.sh /app/bin/runner.sh
+      - install -D main.py /app/main.py
+      - install -D calculator.py /app/calculator.py
+      - install -D org.gnome.LawyerDateCalculator.svg /app/share/icons/hicolor/scalable/apps/org.gnome.LawyerDateCalculator.svg
+      - install -D org.gnome.LawyerDateCalculator.desktop /app/share/applications/org.gnome.LawyerDateCalculator.desktop
+      - install -D org.gnome.LawyerDateCalculator.xml /app/share/metainfo/org.gnome.LawyerDateCalculator.xml
+    sources:
+      - path: runner.sh
+        type: file
+      - path: main.py
+        type: file
+      - path: calculator.py
+        type: file
+      - path: org.gnome.LawyerDateCalculator.svg
+        type: file
+      - path: org.gnome.LawyerDateCalculator.desktop
+        type: file
+      - path: org.gnome.LawyerDateCalculator.xml
+        type: file

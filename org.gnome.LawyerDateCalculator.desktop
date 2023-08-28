@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Lawyer Date Calculator
+Exec=
+Type=Application
+Icon=org.gnome.LawyerDateCalculator.svg
+Categories=GNOME;GTK;Office;Calculator;

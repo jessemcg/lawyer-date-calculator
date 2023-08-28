@@ -1,0 +1,24 @@
+<?xml version="0.1" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.jessemcg.lawyer_date_calculator</id>
+  
+  <name>Lawyer Date Calculator</name>
+  <summary>A simple date calculator useful to lawyers</summary>
+  
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  
+  <description>
+    <p>
+      This is a simple date calculator with just four functions. After entering data, you do not need to click on the &quot;calculate&quot; button. You can just press enter on the keyboard. When entering dates in &quot;mm/dd/yyyy&quot; format, the month and the day can be just one digit, but the year must always be four digits. Therefore, something like &quot;5/3/2023&quot; will work.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">org.gnome.LawyerDateCalculator.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/jessemcg/lawyer-date-calculator/blob/main/LawyerDateCalculator.png</image>
+    </screenshot>
+  </screenshots>
+</component>
+
