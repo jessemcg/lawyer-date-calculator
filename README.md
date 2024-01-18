@@ -17,11 +17,11 @@ Download the LawyerDateCalculator.py file and place it in your home folder.
 
 Make sure it is executable:
 
-	sudo chmod +x $HOME/LawyerDateCalculator_GTK4.py
+	sudo chmod +x $HOME/LawyerDateCalculator.py
 	
 Run it from the terminal:
 
-	python $HOME/LawyerDateCalculator_GTK4.py
+	python $HOME/LawyerDateCalculator.py
 	
 Or place the above command in a script launching app like [Launcher](https://extensions.gnome.org/extension/5874/launcher/).   
 
