@@ -3,17 +3,23 @@ Simple date calculator for scheduling deadlines and the like. The month or day m
 
 <img src="screenshot.png" alt="screenshot" style="width: auto; height: auto;">
 
-# Dependencies
+## Dependencies
 * Python (likely already installed)
 * Python Datetuil Module:
+
 	pip install python-dateutil
+	
 * GTK4 (likely already installed)
 
 ## Usage
 * Download the LawyerDateCalculator.py file and place it in your home folder.
 * Make sure it is executable:
+
 	sudo chmod +x $HOME/LawyerDateCalculator.py
+	
 * Run it from the terminal:
+
 	python $HOME/LawyerDateCalculator.py
+	
 * Or place the above command in a script launching app like [Launcher](https://extensions.gnome.org/extension/5874/launcher/).   
 
