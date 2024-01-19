@@ -22,6 +22,15 @@ class LawyerDateCalculator(Gtk.ApplicationWindow):
         # Set the grid as the child of the window
         self.set_child(grid)
         
+        # Create a ShortcutController
+        shortcut_controller = Gtk.ShortcutController.new()
+        self.add_controller(shortcut_controller)
+
+        # Create a shortcut for Control+Q
+        key_combination = Gtk.ShortcutTrigger.parse_string("<Control>q")
+        shortcut = Gtk.Shortcut.new(key_combination, Gtk.CallbackAction.new(self.quit_app))
+        shortcut_controller.add_shortcut(shortcut)
+        
         # Due Date From Today
         self.duefromtoday_entry = Gtk.Entry()
         self.duefromtoday_entry.set_placeholder_text("# of days")
@@ -137,6 +146,9 @@ class LawyerDateCalculator(Gtk.ApplicationWindow):
         keyname = Gdk.keyval_name(keyval)
         if keyname == "Return" or keyname == "KP_Enter":
             self.calculate(None)
+
+    def quit_app(self, *args):
+        self.get_application().quit()
         
 class LawyerDateCalculatorApp(Gtk.Application):
     def __init__(self):
