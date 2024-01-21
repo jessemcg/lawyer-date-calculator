@@ -1,7 +1,7 @@
 # lawyer-date-calculator
 Simple date calculator for scheduling deadlines and the like. The month or day may be single digit, but the year must be four digits. The enter button can be used instead of the calculate button. This app is written in Python and has a GTK4 GUI. It only works on linux.
 
-<img src="screenshot.png" alt="screenshot" style="width: 700; height: auto;">
+![](screenshot.png){:width="700px"}
 
 ## Install
 
