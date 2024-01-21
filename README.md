@@ -15,7 +15,7 @@ Download the calculator
 
 Make sure it is executable:
 
-	sudo chmod +x $HOME/lawyer-date-calculator/LawyerDateCalculator.py
+	chmod +x $HOME/lawyer-date-calculator/LawyerDateCalculator.py
 	
 Run it from the terminal:
 
